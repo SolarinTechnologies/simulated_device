@@ -35,7 +35,7 @@ function sendMessage(){
     ultraviolet: ultraviolet,
     infrared: infrared,
   }));
-  message.properties.add('UV Alert', (ultraviolet > 30) ? 'true' : 'false');
+  message.properties.add('Solarin_Eyes_Only', (Math.random() > 0.5) ? 'true' : 'false');
   console.log('Sending message: ' + message.getData());
   client.sendEvent(message, function (err) {
     if (err) {

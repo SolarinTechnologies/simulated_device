@@ -47,4 +47,4 @@ function sendMessage(){
 }
 client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);
 sendMessage();
-intervalLoop = setInterval(sendMessage, 60000);
+intervalLoop = setInterval(sendMessage, 3000);
